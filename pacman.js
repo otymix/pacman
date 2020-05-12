@@ -204,7 +204,7 @@ var firstMap =[
                         console.log(`TU AS PERDU... 😑 , la partie a durée ${game_duration} SECONDES.`)
         
                     setTimeout(
-                               alert(`OOPS,  TU AS PERDU... 😑 , la partie a durée ${game_duration} secondes! \n tu as ${game_points} Points dans le classement`),
+                               alert(`OOPS,  Tu as Perdu... 😑 , la partie a durée ${game_duration} secondes! \n tu as ${game_points} Points dans le classement`),
                        3000);
                     clearInterval(IntervalWorker)
             }
