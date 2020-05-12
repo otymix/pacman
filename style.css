@@ -9,6 +9,7 @@
     color:black;
     font-family: 'Press Start 2P', cursive;  
     border: 5px solid white;
+    border-radius: 15px;
 }
 #start_btn:hover {
     background-color: red ; 
@@ -38,6 +39,7 @@ canvas {
     display: block; 
     margin: 0 auto;
     border: 20px solid black;
+    border-radius: 10px;
  }
 
 html, body {
