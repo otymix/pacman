@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PacMan Game Workshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body style="height:100vh; overflow-y:hidden;background:linear-gradient(45deg, #E65100, #ffc107c7); ">
+   
+    <div style=" text-align: center;    left: 25%;position: relative;">
+        <h1 style="font-family: 'Press Start 2P', cursive; width: 50%; color: mediumvioletred; text-align:center; background-color: yellow; box-shadow: 10px 9px 5px #adff2f91; border: 5px solid black; padding:5px">Pac Man Game </h1>
+    </div>
+
+        <canvas class="canvas" id="canvas" width="361" height="418">Votre navigateur ne supporte pas la technologie HTML5.</canvas>
+
+        <div style="font-family: 'Press Start 2P', cursive; color:white; text-align: center; font-size: xx-large;">
+            <h2 id="game_over"></h2> 
+            <h3 >SCORE : <strong id="score" >0</strong> </h3> 
+        </div>
+
+        <button onclick="start_game()" id="start_btn">START</button>
+        &nbsp; &nbsp; 
+        <img src="./img/pacman_logo.png"  class="footer_img"/>
+
+         
+        <script type="text/javascript" src="pacman.js"></script>
+
+</body>
+</html>
