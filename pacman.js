@@ -2,18 +2,18 @@
 
 
 //GAME
-var game = new Game("canvas", 30),
-player = new Player(19, 19, 1, 1, "#3498DB"),
-redGhost = new Ghost(19, 19, 9, 10, "#FF0000"),
-blueGhost = new Ghost(19, 19, 9, 10, "#0000FF"),
+let game = new Game("canvas", 30);
+let player = new Player(19, 19, 1, 1, "#3498DB");
+let redGhost = new Ghost(19, 19, 9, 10, "#FF0000");
+let blueGhost = new Ghost(19, 19, 9, 10, "#0000FF");
 
-food = new Food(3),
-firstLevel = new Map(firstMap, 19);
+let food = new Food(3);
 
+let firstLevel = new Map(firstMap, 19);
 
+let t0=0;
+let IntervalWorker 
 
-var t0=0;
-var IntervalWorker 
 function start_game(){
 
                     begin_sound.play(); 
@@ -109,7 +109,7 @@ var firstMap =[
         {   
                   this.initKeys();
                    //stocking the IntervalWorker so we can kill it when game has to end up
-                   IntervalWorker =  setInterval(this.mainLoop, this.ms);
+                    IntervalWorker =  setInterval(this.mainLoop, this.ms);
                  
         },
     
@@ -472,7 +472,7 @@ document.addEventListener('keypress', (e)=>{
 
   
 function setMaxScore(array,ptsPerFood){
-    let nb_ligne = array.length;
+    const nb_ligne = array.length;
     let total_1 = 0;
       for(let i=0; i<nb_ligne; i++){
         let nb_col = array[i].length
@@ -482,8 +482,8 @@ function setMaxScore(array,ptsPerFood){
                         total_1++;} 
             }
       }
-  return (total_1 )* ptsPerFood
+  return total_1 * ptsPerFood
   
   }
   
- var maxScore = setMaxScore(firstMap,10);
+ const maxScore = setMaxScore(firstMap,10);
